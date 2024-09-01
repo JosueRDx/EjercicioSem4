@@ -28,6 +28,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.josuerdx.ejerciciosem4.ui.theme.EjercicioSem4Theme
 
@@ -57,6 +58,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(bottom = 10.dp)
         )
+        GloveStatus()
     }
 }
 
@@ -100,4 +102,10 @@ fun GloveStatus(modifier: Modifier = Modifier) {
             modifier = Modifier.scale(1.2f)
         )
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GloveStatusPreview() {
+    MainScreen()
 }
